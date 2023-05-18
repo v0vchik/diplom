@@ -19,7 +19,7 @@ $ReverseZoneIPAddress = Read-Host "Enter decired reverse zone IP-address(192.168
 dnscmd /ZoneAdd $ReverseZoneName /Primary /file $ReverseZoneName.dns /load
 
 # Create the reverse lookup range
-dnscmd /RecordAdd $ReverseZoneName $ReverseZoneIPAddress PTR reverse.example.com
+dnscmd /RecordAdd $ReverseZoneName $ReverseZoneIPAddress PTR it-club.com
 
 
 }
