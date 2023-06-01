@@ -1,3 +1,4 @@
+Function AD{
 $ADname = Read-Host "Enter name: "
 $ADGivenName = Read-Host "Enter givenname: "
 $ADSurname = Read-Host "Enter surname : "
@@ -14,4 +15,5 @@ while($ADPathCheck -eq 1){
 $ADPath = $ADPath + ",DC=It-club,DC=com"
 $ADUserPrincipalName = $ADName + "@it-club.com"
 New-ADUser -Name $ADName -GivenName $ADGivenName -Surname $ADSurname -SamAccountName $ADSamAccountName -UserPrincipalName $ADUserPrincipalName -Path $ADPath -AccountPassword(Read-Host -AsSecureString "Input Password") -Enabled $true
-
+}
+AD
