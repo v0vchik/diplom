@@ -81,7 +81,7 @@ def handle_text(update: Update, context: CallbackContext):
 
 def main():
     # Инициализация бота
-    updater = Updater("5997303848:AAEZt32VfhOyJ_kGe_KWdYGnBDx-0vY3gYI", use_context=True)
+    updater = Updater("Sosi Huy,a ne Token,pidoras ebanniy", use_context=True)
 
     # Получение диспетчера обновлений
     dispatcher = updater.dispatcher
